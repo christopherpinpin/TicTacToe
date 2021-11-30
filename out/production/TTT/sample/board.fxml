@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="610.0" prefWidth="722.0" style="-fx-background-color: #363636;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="85.0" prefHeight="522.0" prefWidth="722.0">
+         <children>
+            <Ellipse fx:id="slashDiag" fill="#f6ffa5" layoutX="360.0" layoutY="257.0" radiusX="3.0" radiusY="336.0" rotate="55.0" stroke="#f6ffa5" strokeType="INSIDE" visible="false" />
+            <Ellipse fx:id="backDiag" fill="#f6ffa5" layoutX="370.0" layoutY="267.0" radiusX="3.0" radiusY="336.0" rotate="-55.0" stroke="#f6ffa5" strokeType="INSIDE" visible="false" />
+            <Button layoutX="323.0" layoutY="532.0" mnemonicParsing="false" onAction="#playAgain" prefHeight="33.0" prefWidth="94.0" style="-fx-background-radius: 50; -fx-background-color: #75fabe;" text="Play Again" textFill="#363636">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="437.0" layoutY="532.0" mnemonicParsing="false" onAction="#clickExit" prefHeight="33.0" prefWidth="82.0" style="-fx-background-radius: 50; -fx-background-color: #eaa6ff;" text="Exit" textFill="#363636">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="183.0" layoutY="532.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="33.0" prefWidth="118.0" style="-fx-background-radius: 50; -fx-background-color: #ffd582;" text="Back to Menu" textFill="#363636">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="67.0" layoutY="149.0" prefHeight="407.0" prefWidth="591.0">
+         <children>
+            <Ellipse fill="#84c9fb" layoutX="194.0" layoutY="202.0" radiusX="3.0" radiusY="220.0" stroke="#84c9fb" strokeType="INSIDE" />
+            <Ellipse fill="#84c9fb" layoutX="394.0" layoutY="202.0" radiusX="3.0" radiusY="220.0" stroke="#84c9fb" strokeType="INSIDE" />
+            <Ellipse fill="#84c9fb" layoutX="290.0" layoutY="119.0" radiusX="305.0" radiusY="4.0" stroke="#84c9fb" strokeType="INSIDE" />
+            <Ellipse fill="#84c9fb" layoutX="290.0" layoutY="253.0" radiusX="305.0" radiusY="4.0" stroke="#84c9fb" strokeType="INSIDE" />
+            <Ellipse fx:id="topRow" fill="#f6ffa5" layoutX="290.0" layoutY="55.0" radiusX="305.0" radiusY="4.0" stroke="#f6ffa5" strokeType="INSIDE" visible="false" />
+            <Ellipse fx:id="midRow" fill="#f6ffa5" layoutX="290.0" layoutY="188.0" radiusX="305.0" radiusY="4.0" stroke="#f6ffa5" strokeType="INSIDE" visible="false" />
+            <Ellipse fx:id="botRow" fill="#f6ffa5" layoutX="303.0" layoutY="341.0" radiusX="305.0" radiusY="4.0" stroke="#f6ffa5" strokeType="INSIDE" visible="false" />
+            <Ellipse fx:id="leftCol" fill="#f6ffa5" layoutX="93.0" layoutY="202.0" radiusX="3.0" radiusY="220.0" stroke="#f6ffa5" strokeType="INSIDE" visible="false" />
+            <Ellipse fx:id="midCol" fill="#f6ffa5" layoutX="290.0" layoutY="202.0" radiusX="3.0" radiusY="220.0" stroke="#f6ffa5" strokeType="INSIDE" visible="false" />
+            <Ellipse fx:id="rightCol" fill="#f6ffa5" layoutX="494.0" layoutY="202.0" radiusX="3.0" radiusY="220.0" stroke="#f6ffa5" strokeType="INSIDE" visible="false" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutY="8.0" prefHeight="85.0" prefWidth="722.0" text="MCO2: TIC-TAC-TOE" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="68.0" />
+         </font>
+      </Label>
+      <GridPane gridLinesVisible="true" layoutX="61.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-grid-lines-visible: false;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnUpLeft" mnemonicParsing="false" onAction="#s00" prefHeight="128.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" textFill="#a7e1a2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe Print Bold" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUp" mnemonicParsing="false" onAction="#s10" prefHeight="128.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" textFill="#e0a4a4" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe Print Bold" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpRight" mnemonicParsing="false" onAction="#s20" prefHeight="128.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" textFill="#a7e1a2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe Print Bold" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMidLeft" mnemonicParsing="false" onAction="#s01" prefHeight="128.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" textFill="#a7e1a2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe Print Bold" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMid" mnemonicParsing="false" onAction="#s11" prefHeight="128.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" textFill="#a7e1a2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe Print Bold" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMidRight" mnemonicParsing="false" onAction="#s21" prefHeight="128.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" textFill="#a7e1a2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe Print Bold" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDownLeft" mnemonicParsing="false" onAction="#s02" prefHeight="128.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" textFill="#a7e1a2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe Print Bold" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDown" mnemonicParsing="false" onAction="#s12" prefHeight="128.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" textFill="#a7e1a2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe Print Bold" size="52.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDownRight" mnemonicParsing="false" onAction="#s22" prefHeight="128.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" textFill="#a7e1a2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe Print Bold" size="52.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

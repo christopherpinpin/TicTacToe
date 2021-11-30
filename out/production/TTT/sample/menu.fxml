@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="558.0" prefWidth="604.0" style="-fx-background-color: #363636;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="21.0" prefHeight="83.0" prefWidth="675.0" text="MCO2" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="78.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="158.0" prefHeight="54.0" prefWidth="313.0" text="Keil Finez &amp; Christopher Pinpin" textFill="#84c9fb">
+         <font>
+            <Font name="Calibri Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="27.0" layoutY="92.0" prefHeight="83.0" prefWidth="675.0" text="TIC-TAC-TOE" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="78.0" />
+         </font>
+      </Label>
+      <Button layoutX="34.0" layoutY="338.0" mnemonicParsing="false" onAction="#click0" prefHeight="38.0" prefWidth="109.0" style="-fx-background-radius: 50; -fx-background-color: #75fabe;" text="Level 0" textFill="#363636">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="184.0" layoutY="338.0" mnemonicParsing="false" onAction="#click1" prefHeight="38.0" prefWidth="109.0" style="-fx-background-radius: 50; -fx-background-color: #eaa6ff;" text="Level 1" textFill="#363636">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="337.0" layoutY="338.0" mnemonicParsing="false" onAction="#click2" prefHeight="38.0" prefWidth="109.0" style="-fx-background-radius: 50; -fx-background-color: #ffd582;" text="Level 2" textFill="#363636">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label alignment="BOTTOM_LEFT" layoutX="35.0" layoutY="289.0" prefHeight="32.0" prefWidth="636.0" text="Intelligent Agent Level" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
